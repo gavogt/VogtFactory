@@ -4,12 +4,26 @@ using System.Text;
 
 namespace VogtFactory
 {
-    abstract class RentalCar
+    class RentalCar
     {
         string name;
         int numberOfPeopleThatCanFit;
 
-        public abstract void DisplayCarInfo();
+        RentalCarFactory rcf = new RentalCarFactory();
+
+        public RentalCar orderCar(string type)
+        {
+            RentalCar rc;
+
+            rc = rcf.CreateRentalCar(type);
+
+            return rc;
+        }
+
+        public virtual void DisplayCarInfo()
+        {
+            Console.WriteLine($"{name} {numberOfPeopleThatCanFit}");
+        }
 
     }
 }

@@ -8,9 +8,11 @@ namespace VogtFactory
     {
         public static void Run()
         {
-            Toyota car = new Toyota();
+            RentalCar car = new Toyota();
+            RentalCar car2 = new Ford();
 
             car.DisplayCarInfo();
+            car2.DisplayCarInfo();
         }
     }
 }
