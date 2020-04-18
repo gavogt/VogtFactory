@@ -8,11 +8,17 @@ namespace VogtFactory
     {
         public static void Run()
         {
-            RentalCar car = new Toyota();
-            RentalCar car2 = new Ford();
+            var rcf = new RentalCarFactory();
+            var toyota = rcf.CreateRentalCar("Toyota");
+            var dodge = rcf.CreateRentalCar("Dodge");
+            var yamaha = rcf.CreateRentalCar("Yamaha");
+            var ford = rcf.CreateRentalCar("Ford");
 
-            car.DisplayCarInfo();
-            car2.DisplayCarInfo();
+            toyota.DisplayCarInfo();
+            dodge.DisplayCarInfo();
+            yamaha.DisplayCarInfo();
+            ford.DisplayCarInfo();
         }
     }
+
 }

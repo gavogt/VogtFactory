@@ -6,18 +6,17 @@ namespace VogtFactory
 {
     class Yamaha : RentalCar
     {
-        public string name;
-        public int numberOfPeopleThatCanFit;
+        public string Name = "Motorcycle";
+        public int NumberOfPeopleThatCanFit = 1;
         public Yamaha()
         {
-            this.name = "Motorcycle";
-            this.numberOfPeopleThatCanFit = 1;
+
 
         }
 
         public override void DisplayCarInfo()
         {
-            Console.WriteLine($"{name} car can fit {numberOfPeopleThatCanFit}");
+            Console.WriteLine($"{Name} car can fit {NumberOfPeopleThatCanFit}");
         }
     }
 }

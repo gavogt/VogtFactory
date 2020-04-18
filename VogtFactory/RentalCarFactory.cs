@@ -8,7 +8,7 @@ namespace VogtFactory
     {
         public RentalCar CreateRentalCar(string type)
         {
-            RentalCar rentalCar = null;
+            RentalCar rentalCar = new RentalCar();
 
             if (type.Equals("Toyota"))
             {
@@ -17,6 +17,14 @@ namespace VogtFactory
             if (type.Equals("Dodge"))
             {
                 rentalCar = new Dodge(); 
+            }
+            if (type.Equals("Ford"))
+            {
+                rentalCar = new Ford();
+            }
+            if (type.Equals("Yamaha"))
+            {
+                rentalCar = new Yamaha();
             }
 
             return rentalCar;

@@ -6,18 +6,17 @@ namespace VogtFactory
 {
     class Dodge: RentalCar
     {
-        public string name;
-        public int numberOfPeopleThatCanFit;
+        public string Name = "minivan";
+        public int NumberOfPeopleThatCanFit = 7;
         public Dodge()
         {
-            this.name = "minivan";
-            this.numberOfPeopleThatCanFit = 7;
+
 
         }
 
         public override void DisplayCarInfo()
         {
-            Console.WriteLine($"{name} car can fit {numberOfPeopleThatCanFit}");
+            Console.WriteLine($"{Name} car can fit {NumberOfPeopleThatCanFit}");
         }
     }
 }
