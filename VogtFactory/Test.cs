@@ -9,15 +9,13 @@ namespace VogtFactory
         public static void Run()
         {
             var rcf = new RentalCarFactory();
-            var toyota = rcf.CreateRentalCar("Toyota");
-            var dodge = rcf.CreateRentalCar("Dodge");
-            var yamaha = rcf.CreateRentalCar("Yamaha");
-            var ford = rcf.CreateRentalCar("Ford");
 
-            toyota.DisplayCarInfo();
-            dodge.DisplayCarInfo();
-            yamaha.DisplayCarInfo();
-            ford.DisplayCarInfo();
+            for (int i = 1; i < 7; i++)
+            {
+                RentalCar car = RentalCarFactory.CreateRentalCar(i);
+
+                Console.WriteLine($"Car that holds {i} people {car}");
+            }
         }
     }
 

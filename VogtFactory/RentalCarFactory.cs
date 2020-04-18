@@ -6,23 +6,23 @@ namespace VogtFactory
 {
     class RentalCarFactory
     {
-        public RentalCar CreateRentalCar(string type)
+        public static RentalCar CreateRentalCar(int maxSeats)
         {
             RentalCar rentalCar = new RentalCar();
 
-            if (type.Equals("Toyota"))
+            if (maxSeats <= 4 && maxSeats > 1)
             {
                 rentalCar = new Toyota();
             }
-            if (type.Equals("Dodge"))
+            if (maxSeats <= 7 && maxSeats > 5)
             {
                 rentalCar = new Dodge(); 
             }
-            if (type.Equals("Ford"))
+            if (maxSeats == 5)
             {
                 rentalCar = new Ford();
             }
-            if (type.Equals("Yamaha"))
+            if (maxSeats == 1)
             {
                 rentalCar = new Yamaha();
             }
