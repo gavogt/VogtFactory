@@ -6,8 +6,8 @@ namespace VogtFactory
 {
     class Ford : RentalCar
     {
-        public const string Name = "Escape Hybrid";
-        public const int NumberOfPeopleThatCanFit = 5;
+        public override string Name => "Escape Hybrid";
+        public override int NumberOfPeopleThatCanFit => 5;
 
     }
 }

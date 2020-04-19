@@ -6,10 +6,8 @@ namespace VogtFactory
 {
     class RentalCar
     {
-        public string Name;
-        public int NumberOfPeopleThatCanFit;
-
-        RentalCarFactory rcf = new RentalCarFactory();
+        public virtual string Name { get; }
+        public virtual int NumberOfPeopleThatCanFit { get; }
 
         public void DisplayCarInfo()
         {

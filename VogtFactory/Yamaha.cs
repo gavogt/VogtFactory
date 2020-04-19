@@ -6,8 +6,8 @@ namespace VogtFactory
 {
     class Yamaha : RentalCar
     {
-        public const string Name = "Motorcycle";
-        public const int NumberOfPeopleThatCanFit = 1;
+        public override string Name => "Motorcycle";
+        public override int NumberOfPeopleThatCanFit => 1;
 
     }
 }

@@ -6,8 +6,8 @@ namespace VogtFactory
 {
     class Dodge: RentalCar
     {
-        public const string Name = "minivan";
-        public const int NumberOfPeopleThatCanFit = 7;
+        public override string Name => "Minivan";
+        public override int NumberOfPeopleThatCanFit => 7;
 
     }
 }

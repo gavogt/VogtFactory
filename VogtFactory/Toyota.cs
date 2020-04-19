@@ -6,8 +6,8 @@ namespace VogtFactory
 {
     class Toyota : RentalCar
     {
-        public const string Name = "Corolla";
-        public const int NumberOfPeopleThatCanFit = 4;
+        public override string Name => "Corolla";
+        public override int NumberOfPeopleThatCanFit => 4;
 
     }
 }
