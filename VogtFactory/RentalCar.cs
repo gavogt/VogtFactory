@@ -11,9 +11,10 @@ namespace VogtFactory
 
         RentalCarFactory rcf = new RentalCarFactory();
 
-        public virtual void DisplayCarInfo()
+        public void DisplayCarInfo()
         {
-            Console.WriteLine($"{Name} {NumberOfPeopleThatCanFit}");
+
+            Console.WriteLine($"{Name} car can fit {NumberOfPeopleThatCanFit}");
         }
 
     }

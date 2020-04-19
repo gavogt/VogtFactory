@@ -15,6 +15,8 @@ namespace VogtFactory
                 RentalCar car = RentalCarFactory.CreateRentalCar(i);
 
                 Console.WriteLine($"Car that holds {i} people {car}");
+
+                car.DisplayCarInfo();
             }
         }
     }
