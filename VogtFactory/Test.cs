@@ -10,15 +10,20 @@ namespace VogtFactory
         {
             var rcf = new RentalCarFactory();
 
-            for (int i = 1; i < 7; i++)
+            for (int seats = 1; seats < 7; seats++)
             {
-                RentalCar car = RentalCarFactory.CreateRentalCar(i);
+                RentalCar car = RentalCarFactory.CreateRentalCar(seats);
+                if(car == null)
+                {
+                    Console.WriteLine("describe error!");
+                }
+                else
+                {
+                    Console.WriteLine($"Car that holds {seats} people {car}");
 
-                Console.WriteLine($"Car that holds {i} people {car}");
-
-                car.DisplayCarInfo();
+                    car.DisplayCarInfo();
+                }
             }
         }
     }
-
 }

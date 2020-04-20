@@ -4,10 +4,10 @@ using System.Text;
 
 namespace VogtFactory
 {
-    class RentalCar
+    abstract class RentalCar
     {
-        public virtual string Name { get; }
-        public virtual int NumberOfPeopleThatCanFit { get; }
+        public abstract string Name { get; }
+        public abstract int NumberOfPeopleThatCanFit { get; }
 
         public void DisplayCarInfo()
         {

@@ -6,28 +6,27 @@ namespace VogtFactory
 {
     class RentalCarFactory
     {
+
         public static RentalCar CreateRentalCar(int maxSeats)
         {
-            RentalCar rentalCar = new RentalCar();
-
             if (maxSeats <= 4 && maxSeats > 1)
             {
-                rentalCar = new Toyota();
+                return new Toyota();
             }
             if (maxSeats <= 7 && maxSeats > 5)
             {
-                rentalCar = new Dodge(); 
+                return new Dodge(); 
             }
             if (maxSeats == 5)
             {
-                rentalCar = new Ford();
+                return new Ford();
             }
             if (maxSeats == 1)
             {
-                rentalCar = new Yamaha();
+                return new Yamaha();
             }
 
-            return rentalCar;
+            return null;
         }
     }
 }
