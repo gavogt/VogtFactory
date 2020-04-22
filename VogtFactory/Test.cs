@@ -15,7 +15,7 @@ namespace VogtFactory
                 RentalCar car = RentalCarFactory.CreateRentalCar(seats);
                 if(car == null)
                 {
-                    Console.WriteLine("describe error!");
+                    Console.WriteLine("Error!");
                 }
                 else
                 {
